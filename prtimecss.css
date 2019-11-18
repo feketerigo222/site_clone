@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding:0;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgba(0, 89, 255, 0.884);
+}
+/* headerのcss */
+#header{
+    /* position: fixed; */
+    background-color: #294C7A;
+    border-width: 0 0 0px;
+    width: 100%;
+    padding: 15px 0px 5px 0px;
+    margin : 0px 0px 15px 0px;
+    top: 0;
+    float: left;
+}
+.wrap1{
+    margin-left : auto ;
+    margin-right : auto ;
+    width : 1175px ;
+    
+}
+    
+.contents{
+    color : rgb(212, 212, 212);
+}
+.contents:hover{
+    color : white;
+}
+p1{
+    top : 50px;
+    font-size : 12px;
+    color : white;
+}
+.contents2{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+.contents2::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: white;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+  }
+.contents2:hover::after {
+    transform: scale(1, 1);
+  }
+
+#wrap2{
+    float: right;
+    bottom:10px;
+}  
+p2{
+    color : rgb(212, 212, 212);
+    font-size : 12px;
+}
+
+/* mainのcss */
+#main_contents_main{
+    clear: both;
+    float: left ;
+    /* background-color: aqua; */
+    height: 1300px ;
+    width: 850px ;
+}
+#main_contents_side{
+    float: right ;
+    /* background-color: aquamarine; */
+    height: 1000px;
+    width: 25%;
+    display: table-cell;
+}
+#main_contents_top{
+    margin: 0px 0px 20px 0px;
+    height: 320px;
+}
+/* PR times tvのcss */
+#pr_times_tv{
+    float: left;
+    /* background-color: white; */
+    width: 45%;
+    height: 320px;
+}
+#pr_times_tv_link{
+    height: 39px;
+    font-size: 18px;
+}
+#more_link{
+    float: right;
+    height: 39px;
+    font-size: 15px;
+}
+
+/* 旬速プレスリリースのcss */
+#pr_times_tv_fresh{
+    float: right;
+    /* background-color: cadetblue; */
+    height:320px;
+    width: 48%;
+    margin-top: 0;
+    padding-left: 15px;
+}
+
+#pr_times_tv_fresh_title{
+    height: 39px;
+    margin-top: 0;
+    background-color: white;
+}
+#fresh_icon{
+    float: left;
+    margin-top: 0;
+}
+#fresh_title{
+    /* float: left; */
+    font-size: 16px;
+    margin:0;
+}
+#fresh_sentence{
+    font-size: 10px;
+    /* clear: both; */
+    margin-top: 0px;
+}
+
+#fresh_left{
+    background-color: #f6f6f6;
+    float: left;
+    height: 275px;
+    width: 187px;
+    margin: 10px 0px 0px 0px ;
+    padding: 0px 0px 0px 0px;
+    font-size: 14px;
+}
+#fresh_right{
+    background-color: #f6f6f6;
+    float: right;
+    height: 275px;
+    width: 187px;
+    margin: 10px 0px 0px 20px;
+    font-size: 14px;
+}
+.time{
+    bottom: 0;
+    
+}
+/* 新着プレスリリースのcss */
+#new_release{
+    clear: left;
+}
+#new_icon{
+    float: left;
+}
+#new_title{
+    float: left;
+    margin-top: 8px;
+}
+.new_release_contents_list{
+    clear: both;
+    float: left;
+    height: 78px;
+    width: 100%;
+    /* background-color: aqua; */
+    padding: 16px 0px;
+}
+.new_release_contents_picture{
+    float: left;
+    position: relative;
+    height: 78px;
+    width:120px;
+    margin: 0px 16px 0px 0px;
+}
+
+/* .new_release_contents_picture span{
+    position: absolute;
+} */
+.new_release_contents_sentence{
+    float: left;
+    font-size: 16px;
+    width: 700px;
+}
+.new_release_contents_detail{
+    font-size: 12px;
+    color: #797979;
+}
+
+/* サイドバーのcss */
+#sidebarAboutService{
+    height: 465px;
+    width: 270px;
+    background-color: #f5f5f5;
+    padding: 8px 12px 0px 12px;
+}
+#sidebarAboutService_title{
+    font-size: 15px;
+    color: #767676;
+    text-align: center;
+    line-height: 13px;
+}
+.sidebarAboutService_list{
+    height: 52px;
+    width: 270px;
+    background-color: white;
+    margin: 8px 0px 0px 0px;
+    border: 1px solid #DCE0E0;
+    padding:4px 0px;
+}
+.sidebarAboutService_list_picture{
+    float: left;
+}
+.sidebarAboutService_list_top{
+    float: left;
+    font-size: 11px;
+    color: #767676;
+}
+.sidebarAboutService_list_bottom{
+    font-size: 18px;
+    color: #484848;
+}
+#sidebarAboutService_sentence1{
+    font-size: 13px;
+    letter-spacing: -1.8px;
+    font-weight: 600;
+    margin: 18px -10px 9px;
+    color: #333;
+    text-align: center;
+}
+#sidebarAboutService_sentence2{
+    color: #378CD0;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: center;
+    line-height: 0px;
+}
+.button_service {
+    width: 120px;
+    height: 36px;
+    font-size: 14px;
+    color: #fff;
+    margin: 20px auto 0px auto;
+    background-color: #378CD0;
+    line-height: 36px;
+    box-sizing: border-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px -3px #847f85;
+    -moz-box-shadow: 0px 4px 4px -3px #847f85;
+    -webkit-box-shadow: 0px 4px 4px -3px #847f85;
+}
+.button {
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    border: 0 none;
+    padding: 0;
+    outline: 0;
+}
+#border{
+    border: 1px solid #847f85;
+    height: 0px;
+    width: 294px;
+    margin: 30px 0px 20px 0px;
+}
+.torend_contents{
+    background-color: #f5f5f5;
+    font-size:13px;
+    border-radius: 25%;
+    padding: 0px 8px 0px 8px;
+}
+/* footerのCSS */
+#footer{
+    /* position : absolute ; */
+    background-color : rgb(233, 233, 233);
+    height : 400px ; 
+    bottom : 0 ;
+    width : 100% ;
+    font-size : 13px ; 
+    clear: left;
+}
+ul{
+    list-style-type: none ;
+    float: left;
+    margin-top: 100px ;
+}
+.list{
+    color : rgb(124, 124, 124);
+}
+.list:hover{
+    color :black;
+}
+ul.footer_list li{
+    margin-bottom : 10px ;
+}
+.footer_title{
+    width : 250px  ;
+    float : left ;
+}
+.footer_recomend{
+    width : 250px ;
+    float : left ;
+}
+.footer_list{
+    width : 250px ; 
+    float : left ;
+}
+.footer_sns{
+    width : 250px ;
+    float : left ;
+}
+#footer_enterprize{
+    clear: left;
+}
+
